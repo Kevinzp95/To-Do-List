@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.todo__header {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+.todo__list {
+  list-style: none;
+}
+.todo__item {
+  padding: 20px;
+  text-transform: uppercase;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+}
+.todo__item:nth-child(odd) {
+  background: lightgray;
+}
+.todo__item:nth-child(even) {
+  background: darkgray;
+}
+.todo__item:hover {
+  background: gray;
+}
+.todo__closeBtn {
+  position: absolute;
+  right: 20px;
+}
+.checked {
+  background: green !important;
+  text-decoration: line-through;
+}
+.checked:before {
+  content: "✓";
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+}
